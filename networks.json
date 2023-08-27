@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "Web3RSVP": {
+      "address": "0x9457644dD8cB3aCC1fa41159321609D9D305de46",
+      "startBlock": 4170209
+    }
+  }
+}
