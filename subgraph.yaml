@@ -1,23 +1,25 @@
 specVersion: 0.0.5
 schema:
   file: ./schema.graphql
+features:
+  - ipfsOnEthereumContracts  
 dataSources:
-  - kind: ethereum
+  - kind: ethereum/contract
     name: Web3RSVP
-    network: sepolia
+    network: mumbai
     source:
-      address: "0x9457644dD8cB3aCC1fa41159321609D9D305de46"
+      address: "0xC1c053b2B47B61a4E3d3a4A97CCc21d93bF460e1"
       abi: Web3RSVP
-      startBlock: 4170209
+      startBlock: 39493368 
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - ConfirmedAttendee
-        - DepositsPaidOut
-        - NewEventCreated
-        - NewRSVP
+        - Event
+        - Account
+        - RSVP
+        - Confirmation
       abis:
         - name: Web3RSVP
           file: ./abis/Web3RSVP.json
