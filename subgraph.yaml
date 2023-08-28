@@ -8,7 +8,7 @@ dataSources:
     name: Web3RSVP
     network: mumbai
     source:
-      address: "0xC1c053b2B47B61a4E3d3a4A97CCc21d93bF460e1"
+      address: "0xea7A77AB4E7F035233Ad82331a7ab7b082D67C0B"
       abi: Web3RSVP
       startBlock: 39493368 
     mapping:
